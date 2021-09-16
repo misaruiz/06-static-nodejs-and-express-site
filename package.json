@@ -1,0 +1,12 @@
+{
+  "name": "06-static-nodejs-and-express-site",
+  "version": "0.0.1",
+  "description": "Portfolio site to showcase Full Stack Javascript projects",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Misael Ruiz",
+  "license": "ISC"
+}
