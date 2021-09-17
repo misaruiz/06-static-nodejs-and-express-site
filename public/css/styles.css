@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
 
 /*
   Main styles
@@ -17,7 +20,7 @@ body {
 
 body {
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Nunito", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -32,14 +35,11 @@ article {
 }
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: 'Nunito', serif;
 }
 
 h5{
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  letter-spacing: 2.5px;
-  -webkit-text-transform: uppercase;
-  text-transform: uppercase;
+  font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h6{
@@ -47,11 +47,12 @@ h6{
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
+  color: rgb(13, 110, 253);
 }
 
-p{
+p {
   font-size: 15px;
-  color: #666;
+  color: rgb(13, 110, 253);
 }
 
 a {
@@ -114,7 +115,7 @@ nav {
 nav a {
   width: 100%;
   vertical-align: middle;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -137,7 +138,7 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
+  background: rgba(33, 37, 41, 0.75);
 }
 
 .sidebar-info-box {
@@ -151,7 +152,6 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  border: 4px solid #fff;
 }
 
 .dev-intro-box {
@@ -171,7 +171,7 @@ nav a span {
 }
 
 .sidebar a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -242,12 +242,9 @@ nav a span {
 }
 
 .projects-box h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 2.25px;
-  text-transform: uppercase;
-  color: #222;;
+  color: rgb(13, 110, 253);
   margin: 0 auto 8px;
 }
 
@@ -258,7 +255,6 @@ nav a span {
 .cell img {
   width: 100%;
   min-width: 100px;
-  border: 4px solid #fff;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 

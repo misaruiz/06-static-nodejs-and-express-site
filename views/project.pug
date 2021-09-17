@@ -24,20 +24,18 @@ block content
         ul
 
           //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-          li HTML
-          li CSS
-          li JavaScript
+          each technology of technologies
+            li= technology
 
         //- Add the href values to the links below
-        a.btn-link(href=`${live_link}`) Live Demo
-        a.btn-link(href=`${github_link}`) GitHub Repo
+        a.btn-link(href=`${live_link}`, target='_blank') Live Demo
+        a.btn-link(href=`${github_link}`, target='_blank') GitHub Repo
 
     .project-img-box.box
 
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-      img.project-img(src=`/static/images/${image_urls[0]}`, alt='')
-      img.project-img(src=`/static/images/${image_urls[1]}`, alt='')
-      img.project-img(src=`/static/images/${image_urls[2]}`, alt='')
+      each image_url of image_urls
+        img.project-img(src=`/static/images/${image_url}`, alt='')
 
     nav.nav
       a(href='/')

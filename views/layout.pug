@@ -5,16 +5,16 @@ html(lang="en" dir="ltr")
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Portfolio Site
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We', crossorigin='anonymous')
     link(rel='stylesheet', href='/static/css/normalize.css')
     link(rel='stylesheet', href='/static/css/styles.css')
 
-  body
+  body.bg-secondary
     #my-info.sidebar
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail(src='/static/images/misaruiz-avatar.png', alt='')
+          img.thumbnail.rounded-circle(src='/static/images/misaruiz-avatar.png', alt='')
         .dev-intro-box
 
           //- Replace with your name
@@ -24,7 +24,7 @@ html(lang="en" dir="ltr")
           p Description
 
           //- Add path from your '/about' route handler to the href below
-          a(href='') Learn More &rarr;
+          a(href='/about') Learn More &rarr;
 
     .wrapper
       .header
@@ -32,7 +32,7 @@ html(lang="en" dir="ltr")
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
           //- Replace with your name — this is for the mobile layout
-          span Name
+          spa Misael Ruiz
 
       block content
 

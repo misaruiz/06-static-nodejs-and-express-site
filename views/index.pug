@@ -16,6 +16,10 @@ block content
       each project in projects
         .cell
           a(href=`/project/${project.id}`)
-            img.thumbnail(src=`/static/images/${project.image_urls[0]}`, alt=`${project.description}`)
+            img.thumbnail.img-thumbnail(src=`/static/images/${project.image_urls[0]}`, alt=`${project.description}`)
             h5 #{project.project_name}
-
+        a(href=`/project/${project.id}`)
+          .card.mb-3
+            img.card-img-top(src=`/static/images/${project.image_urls[0]}`, alt=`${project.description}`)
+            .card-body
+              h5.card-title #{project.project_name}

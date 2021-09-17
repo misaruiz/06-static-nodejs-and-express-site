@@ -72,5 +72,10 @@
                 "misaruiz-portfolio-project05-img04.png"
             ]
         }
-    ]
+    ],
+    "info":
+        {
+            "name": "Misael Ruiz",
+            "title": "Full Stack JavaScript Developer"
+        }
 }
