@@ -2,11 +2,18 @@
   "name": "06-static-nodejs-and-express-site",
   "version": "0.0.1",
   "description": "Portfolio site to showcase Full Stack Javascript projects",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "nodemon app.js"
   },
   "author": "Misael Ruiz",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
