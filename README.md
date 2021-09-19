@@ -6,9 +6,9 @@
 
 ## Extra Credit:
 
-- [x] **Customize the package.json file** :mag_right:
+- [x] **Customize the package.json file** :memo:
   - `npm start` will run the app
-- [x] **Render helpful Pug templates in your error handling middleware** :arrow_left: :arrow_right:
+- [x] **Render helpful Pug templates in your error handling middleware** :warning:
   - One for 404 and another to handle rest
 - [x] **Customize the style** :artist:
   - [x] **Detail style changes**
