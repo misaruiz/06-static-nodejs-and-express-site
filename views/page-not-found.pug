@@ -2,10 +2,27 @@ extends layout.pug
 
 block content
     nav.nav
-        a(href='/')
-            span &larr;
-            |  Home
+        a.btn.btn-outline-primary.ms-4(href='/') 
+            i.bi.bi-arrow-left
+            span Home
     article.portfolio-intro
-        h1= error.message
-        h2= error.status 
-        h3 PAGE NOT FOUND!!!!
+        h1.display-3
+            strong= error.message
+        h2.display-6.text-primary
+            strong= error.status 
+        p.display-1.mt-5
+            i.bi.bi-emoji-dizzy 
+            i.bi.bi-emoji-expressionless 
+            i.bi.bi-emoji-smile-upside-down 
+        p.h3.mt-5 
+            strong Life took you down a wrong path. 
+            br
+            | Do not worry, there is a way 
+            a(href="/")
+                i.bi.bi-house 
+                | Home
+    nav.nav
+    nav.nav
+      a.btn.btn-outline-primary.ms-4(href='/') 
+        i.bi.bi-arrow-left
+        span Home

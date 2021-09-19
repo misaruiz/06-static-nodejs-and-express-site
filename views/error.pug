@@ -2,9 +2,19 @@ extends layout.pug
 
 block content
     nav.nav
-        a(href='/')
-            span &larr;
-            |  Home
+        a.btn.btn-outline-primary.ms-4(href='/') 
+            i.bi.bi-arrow-left
+            span Home
     article.portfolio-intro
-        h1= error.message
-        h2= error.status 
+        h1.display-3
+            strong= error.message
+        h2.display-6.text-primary
+            strong= error.status 
+        p.display-1.mt-5
+            i.bi.bi-server
+            i.bi.bi-exclamation-triangle
+    nav.nav
+    nav.nav
+      a.btn.btn-outline-primary.ms-4(href='/') 
+        i.bi.bi-arrow-left
+        span Home

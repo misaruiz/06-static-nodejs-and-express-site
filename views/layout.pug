@@ -24,9 +24,9 @@ html(lang="en" dir="ltr")
     .wrapper
       .header
         .header-info-box
-          button#menu-icon.menu-icon(type='button' data-toggle='my-info')
-
-          span Misael Ruiz
+          button#menu-icon(type='button' data-toggle='my-info')
+            i.bi.bi-list
+          span #{info.name}
 
       block content
 
