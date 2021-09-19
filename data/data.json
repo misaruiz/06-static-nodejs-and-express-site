@@ -55,8 +55,8 @@
             "project_name": "OOP Game Show App",
             "description": "A browser-based, word guessing game: \"Phrase Hunter.\" that selects a random, hidden phrase.",
             "technologies": ["Javascript", "HTML", "CSS", "Git and GitHub", "OOP"],
-            "live_link": "https://misaruiz.github.io/03-Interactive-Form/",
-            "github_link": "https://github.com/misaruiz/03-Interactive-Form",
+            "live_link": "https://misaruiz.github.io/04-oop-game-show-app/",
+            "github_link": "https://github.com/misaruiz/04-oop-game-show-app",
             "image_thumb": "misaruiz-portfolio-project04-img01.png",
             "image_urls": [
                 "misaruiz-portfolio-project04-img02.png", 
@@ -153,6 +153,18 @@
                                 "Rapid prototyping using Adobe XD, Invision & Codepen",
                                 "Interactive flow with HTML/CSS/JS",
                                 "Frameworks (Bootstrap)"
+                            ]
+                        },
+                        {
+                            "head": "Adobe Suite",
+                            "items": [
+                                "Photoshop",
+                                "Illustrator",
+                                "XD",
+                                "Premiere Pro",
+                                "Media Encoder",
+                                "Lightroom",
+                                "InDesign"
                             ]
                         }
                     ]
