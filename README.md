@@ -6,11 +6,11 @@
 
 ## Extra Credit:
 
-- [x] **Search** :mag_right:
+- [x] **Customize the package.json file** :mag_right:
   - Search by partial first and last name.
-- [x] **Modal Toggle** :arrow_left: :arrow_right:
-  - Toggles back and forth between employees when the modal window is open.
-- [x] **Structure, style and CSS** :artist:
+- [x] **Render helpful Pug templates in your error handling middleware** :arrow_left: :arrow_right:
+  - 404 and everythign else!
+- [x] **Customize the style** :artist:
   - [x] **Detail style changes**
     - **Font-family:** Montserrat
     - **Text Color**
