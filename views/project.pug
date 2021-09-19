@@ -14,19 +14,22 @@ block content
         //- Use the info in your data file and the comments below to complete this template
 
         //- Use interpolation to dynamically add the project title
-        h1 
+        h1.display-4 
           strong #{project_name}
 
         //- Use interpolation to dynamically add the project description
-        p.text-primary #{description}
+        p.h5.text-primary #{description}
 
       .project-tech-links-box.box
-        h6 Technologies
-        ul
+        article.pb-3
+          h6.text-primary
+            i.bi.bi-code-square
+            |  Technologies
 
-          //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-          each technology of technologies
-            li= technology
+          p.small 
+            each technology in technologies
+              span.text-primary.text-opacity-50  • 
+              span= technology
 
         //- Add the href values to the links below
         .mb-0 

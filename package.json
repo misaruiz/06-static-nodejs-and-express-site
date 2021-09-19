@@ -7,6 +7,9 @@
     "start": "node app.js",
     "test": "nodemon app.js"
   },
+  "engines": {
+    "node": "16.9.1"
+  },
   "author": "Misael Ruiz",
   "license": "ISC",
   "dependencies": {

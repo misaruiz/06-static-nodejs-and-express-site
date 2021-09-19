@@ -3,8 +3,8 @@
         {
             "id": "0",
             "project_name": "Random Quote Generator",
-            "description": "A program that displays a randomly selected quote each time the user clicks a button.",
-            "technologies": ["Javascript", "HTML", "CSS"],
+            "description": "This program displays a randomly selected quote each time the user clicks a button or a specific time has passed. The background color also changes randomly with each new quote. You'll notice all quotes were themselves quoted in Austin Kelon's Steal Like An Artist, one of my favorite books.",
+            "technologies": ["Javascript", "HTML", "CSS", "Git and GitHub"],
             "live_link": "https://misaruiz.github.io/01-Random-Quote-Generator/",
             "github_link": "https://github.com/misaruiz/01-Random-Quote-Generator",
             "image_thumb": "misaruiz-portfolio-project01-img01.png",
@@ -20,7 +20,7 @@
             "id": "1",
             "project_name": "Data Pagination and Filtering",
             "description": "A program to display several pages of student data that the user can easily navigate and view.",
-            "technologies": ["javascript", "HTML", "CSS"],
+            "technologies": ["Javascript", "HTML", "CSS", "Git and GitHub"],
             "live_link": "https://misaruiz.github.io/02-Data-Pagination-And-Filtering/",
             "github_link": "https://github.com/misaruiz/02-Data-Pagination-And-Filtering",
             "image_thumb": "misaruiz-portfolio-project02-img01.png",
@@ -33,7 +33,7 @@
             "id": "2",
             "project_name": "Interactive Form",
             "description": "Form that is engaging, interactive, and easy to use.",
-            "technologies": ["javascript", "HTML", "CSS"],
+            "technologies": ["javascript", "HTML", "CSS", "Git and GitHub", "Accessibility"],
             "live_link": "https://misaruiz.github.io/03-Interactive-Form/",
             "github_link": "https://github.com/misaruiz/03-Interactive-Form",
             "image_thumb": "misaruiz-portfolio-project03-img01.png",
@@ -49,7 +49,7 @@
             "id": "3",
             "project_name": "OOP Game Show App",
             "description": "A browser-based, word guessing game: \"Phrase Hunter.\" that selects a random, hidden phrase.",
-            "technologies": ["Javascript", "HTML", "CSS"],
+            "technologies": ["Javascript", "HTML", "CSS", "Git and GitHub", "OOP"],
             "live_link": "https://misaruiz.github.io/03-Interactive-Form/",
             "github_link": "https://github.com/misaruiz/03-Interactive-Form",
             "image_thumb": "misaruiz-portfolio-project04-img01.png",
@@ -67,7 +67,7 @@
             "id": "4",
             "project_name": "Public API Requests",
             "description": "An employee directory that communicates with a third-party API.",
-            "technologies": ["Javascript", "HTML", "CSS"],
+            "technologies": ["Javascript", "HTML", "CSS", "Git and GitHub", "Fetch and Public APIs"],
             "live_link": "https://misaruiz.github.io/05-public-api-requests/",
             "github_link": "https://github.com/misaruiz/05-public-api-requests",
             "image_thumb": "misaruiz-portfolio-project05-img01.png",
@@ -83,6 +83,170 @@
     "info":
         {
             "name": "Misael Ruiz",
-            "title": "Full Stack JavaScript Developer"
+            "title": "UX Designer and Full Stack Javascript Developer",
+            "about": "I am a Full Stack Javascript Developer based in San Diego with a background in User Interface and Experience Design. I am passionate about the whole process, everything from design to development, from conception to execution. In my free time I am an illustrator and a fur father to a mini schnauzer.",
+            "contact": [
+                {
+                    "display": "619-292-1438",
+                    "url": "tel:619-292-1438",
+                    "icon": "telephone"
+                },
+                {
+                    "display": "misaruiz@gmail.com",
+                    "url": "mailto:misaruiz@gmail.com",
+                    "icon": "envelope"
+                },
+                {
+                    "display": "LinkedIn",
+                    "url": "https://www.linkedin.com/in/misaruiz/",
+                    "icon": "linkedin"
+                },
+                {
+                    "display": "GitHub",
+                    "url": "https://github.com/misaruiz",
+                    "icon": "github"
+                }
+            ],
+            "feats": [
+                {
+                    "category": "Skills",
+                    "icon": "lightbulb",
+                    "subcategories": [
+                        {
+                            "head": "Full Stack Javascript",
+                            "items": [
+                                "HTML",
+                                "CSS",
+                                "Javascript",
+                                "Git and GitHub",
+                                "VS Code",
+                                "Accessibility",
+                                "OOP",
+                                "Fetch and Public APIs",
+                                "Node.js",
+                                "Express",
+                                "Pug"
+                            ]
+                        },
+                        {
+                            "head": "UI/UX",
+                            "items": [
+                                "Strategy & vision presentations",
+                                "User flows",
+                                "Concept sketches",
+                                "Wireframes & mockups with Adobe XD & Invision",
+                                "VS Code",
+                                "Production redlines",
+                                "Style guides, pattern library & design system"
+                            ]
+                        },
+                        {
+                            "head": "Prototyping",
+                            "items": [
+                                "Rapid prototyping using Adobe XD, Invision & Codepen",
+                                "Interactive flow with HTML/CSS/JS",
+                                "Frameworks (Bootstrap)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "Recognition",
+                    "icon": "trophy",
+                    "subcategories": [
+                        {
+                            "head": "2021 Markers Heart Award",
+                            "items": [
+                                "For exemplifying empathy and ownership"
+                            ]
+                        },
+                        {
+                            "head": "2018 Marketing Superstar",
+                            "items": [
+                                "For dedication to team goals and culture"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "And More!",
+                    "icon": "geo-alt",
+                    "subcategories": [
+                        {
+                            "head": "Activities",
+                            "items": [
+                                "Travel",
+                                "Hiking",
+                                "Camping",
+                                "Border Angels Water Drop Volunteer"
+                            ]
+                        },
+                        {
+                            "head": "Art & Music",
+                            "items": [
+                                "Illustrations",
+                                "Murals",
+                                "T-Shirts",
+                                "Guitar"
+                            ]
+                        },
+                        {
+                            "head": "Languages",
+                            "items": [
+                                "English & Spanish",
+                                "Subway Station French"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "work_history": [
+                {
+                    "position": "Senior UI/UX Designer",
+                    "company": "Technology & Services Industry Association (TSIA)",
+                    "start_date": "Feb 2020",
+                    "end_date": "Present",
+                    "location": "San Diego, CA",
+                    "descriptions": [
+                        "Conducted extensive research on Accessibility and Inclusion Compliance. Presented results to the Product and Marketing teams, alongside action items to start making gradual improvements based on level of effort.",
+                        "Created a sophisticated design experience for our audience to access content around &ldquo;how to navigate your business during a pandemic&rdquo;. Designed this page to be easy to consume and scalable for the future. This effort created a positive impact on many technology companies who were struggling to stay afloat when the pandemic hit."
+                    ]
+                },
+                {
+                    "position": "Senior Web Designer",
+                    "company": "Technology & Services Industry Association (TSIA)",
+                    "start_date": "Nov 2018",
+                    "end_date": "Feb 2020",
+                    "location": "San Diego, CA",
+                    "descriptions": [
+                        "Redesigned the conference website to improve user experience. I excelled in technical skillset and collaboration abilities, resulting in a beautiful and functional site. This new site has proven to be a delight to the user and has a great impact.",
+                        "Delivered successful landing pages for TSIA company books, charity programs, speaking engagements, major updates to all product pages, and digital ad campaigns.",
+                        "I played a key role in restoring trust and efficiency between the Marketing and Product Development handshake."
+                    ]
+                },
+                {
+                    "position": "Graphic Designer",
+                    "company": "Technology & Services Industry Association (TSIA)",
+                    "start_date": "Feb 2017",
+                    "end_date": "Nov 2018",
+                    "location": "San Diego, CA",
+                    "descriptions": [
+                        "Redesigned the main website, was a massive achievement considering my early onboarding, I proved from day one that no challenge was too large. I tackled the project with proactiveness, ownership, and exceptional design skills.",
+                        "Redesigned the webinar user interface, marketing emails, social media images, and research report covers. This resulted in a better brand alignment when facing our members and prospects."
+                    ]
+                },
+                {
+                    "position": "Graphic Designer",
+                    "company": "HM Electronics, Inc. (HME)",
+                    "start_date": "Jan 2010",
+                    "end_date": "Feb 2017",
+                    "location": "Poway, CA",
+                    "descriptions": [
+                        "Managed and created Product Brochures, Video Presentations, and a Trade Show Kiosk which were pivotal in the acquisition of SONIC Drive-In business.",
+                        "Redesigned product labels for JTECH (HME acquired company). Contributed a fresh and new look to restaurant guest pagers.",
+                        "Coordinated and provided photography for Vuze Table Location System, incorporated in presentations and brochures to increase."
+                    ]
+                }
+            ]
         }
 }

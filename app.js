@@ -16,7 +16,8 @@ app.get('/', (req, res) => {
     res.render('index', {projects});
 });
 app.get('/about', (req, res) => {
-    res.render('about');
+    const info = data.info;
+    res.render('about', info);
 })
 app.get('/project/:id', (req, res, next) => {
     const { id } = req.params;

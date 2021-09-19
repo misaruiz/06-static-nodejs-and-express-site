@@ -1,7 +1,6 @@
 extends layout.pug
 
 block content
-
   nav.nav
     a.btn.btn-outline-primary.ms-4(href='/') 
       i.bi.bi-arrow-left
@@ -10,156 +9,47 @@ block content
   article.portfolio-about
     .inner-wrapper.flex-row-wrap.two-col
       .about-intro-box.box
-
-        //- Replace with your name
-        h1
-          strong Misael Ruiz
-
-        //- Feel free to personalize the title below
-        p.text-primary Full Stack Javascript Developer
+        h1.display-3
+          strong #{name}
+        h3.text-primary.mb-4
+          strong #{title}
 
         .about-bio
+          p.mb-5 #{about}
 
-          //- Replace the boilerplate below with your best elevator pitch
-          p I am a Full Stack Javascript Developer based in San Diego with a background in User and Experience Design. I am passionate about the whole process, everything from design to development, from conception to execution. In my free time I am an illustrator and a fur father to a mini schnauzer.  
-          br
-          br
-
-          section#work-experience
+          section#work-experience.pt-4
             article.mb-5
-              h3.h4
-                strong
-                  | Senior 
-                  abbr(title='', data-bs-toggle='tooltip', data-bs-placement='bottom', data-bs-original-title='User Interface / User Experience') UI/UX
-                  |  Designer
-              p.h6.text-primary Technology &amp; Services Industry Association (TSIA)
-              p.text-muted.h6
-                | Feb 2020 &ndash; Present 
-                span.text-primary.text-opacity-25 &bull;
-                |  San Diego, CA
-              ul.description
-                li
-                  | Conducted extensive research on Accessibility and Inclusion Compliance. Presented results to the Product and Marketing teams, alongside action items to start making gradual improvements based on level of effort.
-                li
-                  | Created a sophisticated design experience for our audience to access content around &ldquo;how to navigate your business during a pandemic&rdquo;. Designed this page to be easy to consume and scalable for the future. This effort created a positive impact on many technology companies who were struggling to stay afloat when the pandemic hit.
-            article.mb-5
-              h3.h4
-                strong Senior Web Designer
-              p.h6.text-primary Technology &amp; Services Industry Association (TSIA)
-              p.text-muted.h6
-                | Nov 2018 &ndash; Feb 2020 
-                span.text-primary.text-opacity-25 &bull;
-                |  San Diego, CA
-              ul.description
-                li
-                  | Redesigned the conference website to improve user experience. I excelled in technical skillset and collaboration abilities, resulting in a beautiful and functional site. This new site has proven to be a delight to the user and has a great impact.
-                li
-                  | Delivered successful landing pages for TSIA company books, charity programs, speaking engagements, major updates to all product pages, and digital ad campaigns.
-                li
-                  | I played a key role in restoring trust and efficiency between the Marketing and Product Development handshake.
-            article.mb-5
-              h3.h4
-                strong Graphic Designer
-              p.h6.text-primary Technology &amp; Services Industry Association (TSIA)
-              p.text-muted.h6
-                | Feb 2017 &ndash; Nov 2018 
-                span.text-primary.text-opacity-25 &bull;
-                |  San Diego, CA
-              ul.description
-                li
-                  | Redesigned the main website, was a massive achievement considering my early onboarding, I proved from day one that no challenge was too large. I tackled the project with proactiveness, ownership, and exceptional design skills.
-                li
-                  | Redesigned the webinar user interface, marketing emails, social media images, and research report covers. This resulted in a better brand alignment when facing our members and prospects.
-            article.mb-5
-              h3.h4
-                strong Graphic Designer
-              p.h6.text-primary HM Electronics, Inc. (HME)
-              p.text-muted.h6
-                | Jan 2010 &ndash; Feb 2017 
-                span.text-primary.text-opacity-25 &bull;
-                |  Poway, CA
-              ul.description
-                li
-                  | Managed and created Product Brochures, Video Presentations, and a Trade Show Kiosk which were pivotal in the acquisition of SONIC Drive-In business.
-                li
-                  | Redesigned product labels for JTECH (HME acquired company). Contributed a fresh and new look to restaurant guest pagers.
-                li
-                  | Coordinated and provided photography for Vuze Table Location System, incorporated in presentations and brochures to increase
-
-
+              each job of work_history
+                h3.h4
+                  strong #{job.position}
+                p.h6.text-primary= job.company
+                p.text-muted.h6
+                  | #{job.start_date} &ndash; #{job.end_date} 
+                  span.text-primary.text-opacity-25 &bull;
+                  |  #{job.location}
+                ul.description
+                  each description of job.descriptions
+                    li #{description}
+            
       .skills-contact-box.box
-        article.pb-3
-          p.mb-0 
-            i.bi.bi-telephone.text-primary
-            span.text-primary  619-292-1438
-          p.mb-0 
-            i.bi.bi-envelope.text-primary
-            a(href='mailto:misaruiz@gmail.com')  misaruiz@gmail.com
-          p.mb-0 
-            i.bi.bi-linkedin.text-primary
-            a(href='https://www.linkedin.com/in/misaruiz/')  LinkedIn
-          p 
-            i.bi.bi-github.text-primary
-            a(href='https://github.com/misaruiz')  GitHub
+        article.pb-5
+          each item in contact
+            p.mb-2 
+              i(class=`bi bi-${item.icon} text-primary`) 
+              a(href=`${item.url}`) #{item.display}
 
-        article.pb-3
-          h6.text-primary
-            i.bi.bi-lightbulb
-            |  Skills
-
-          p.small 
-            strong Full Stack Javascript
-            each skill in ['HTML', 'CSS', 'Javascript', 'Git and GitHub', 'VS Code', 'Accessibility', 'OOP', 'Fetch and Public APIs', 'Node.js', 'Express', 'Pug']
-              span.text-primary.text-opacity-50  • 
-              span= skill
-          p.small 
-            strong UI/UX
-            each skill in ['Strategy & vision presentations', 'User flows', 'Concept sketches', 'Wireframes & mockups with Adobe XD & Invision', 'Production redlines', 'Style guides, pattern library & design system']
-              span.text-primary.text-opacity-50  • 
-              span= skill
-          p.small 
-            strong Prototyping
-            each skill in ['Rapid prototyping using Adobe XD, Invision & Codepen', 'Interactive flow with HTML/CSS/JS', 'Frameworks (Bootstrap)']
-              span.text-primary.text-opacity-50  • 
-              span= skill
-
-        article.pb-3
-          h6.text-primary
-            i.bi.bi-trophy
-            |  Recognition
-          p.small
-            strong 2021 Markers Heart Award
-            span.text-primary.text-opacity-50  • 
-            span For exemplifying empathy and ownership
-          p.small
-            strong 2018 Marketing Superstar
-            span.text-primary.text-opacity-50  • 
-            span For dedication to team goals and culture
-
-        article.pb-3
-          h6.text-primary
-            i.bi.bi-trophy
-            |  And More!
-          p.small
-            strong Activities
-            each activity in ['Travel', 'Hiking', 'Camping', 'Border Angels Water Drop Volunteer']
-              span.text-primary.text-opacity-50  • 
-              span= activity
-          p.small
-            strong Art &amp; Music
-            each activity in ['Illustrations', ' Murals', 'T-Shirts', 'Guitar']
-              span.text-primary.text-opacity-50  • 
-              span= activity
-          p.small
-            strong Languages 
-            span.text-primary.text-opacity-50  • 
-            span English &amp; Spanish
-
-
-
-        //- Add URLs to the hrefs below to link to your social media accounts - feel free to use non-personal links to social media home pages if you prefer
-        
-        
+        each feat in feats 
+          article.pb-3
+            h6.text-primary 
+              i(class=`bi bi-${feat.icon}`) 
+              | #{feat.category}
+            each sub in feat.subcategories
+              p.small 
+                strong #{sub.head}
+                each item in sub.items
+                  span.text-primary.text-opacity-50  • 
+                  span #{item}
+          
     nav.nav
     nav.nav
       a.btn.btn-outline-primary.ms-4(href='/') 
