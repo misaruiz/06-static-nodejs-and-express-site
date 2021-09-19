@@ -3,17 +3,11 @@ extends layout.pug
 block content
 
   article.portfolio-intro
-
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
     h1.display-3
-      strong Welcome!
-
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
+      strong #{home.headline}
     h3.text-primary 
-      strong This is my Full Stack Javascript portfolio!
-    
-    p.h5.mt-5 Take a look at my individual projects. But I'd like to point out that this portfolio also showcases my knowledge and experience deploying a website using Node.js, Express, and Pug  (Oh! Git, GitHub and VS Code too!).
-
+      strong #{home.subhead}
+    p.h5.mt-5 #{home.intro}
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
@@ -22,8 +16,9 @@ block content
           .card.mb-3.shadow
             img.card-img-top(src=`/static/images/${project.image_thumb}`, alt=`${project.description}`)
             .card-body
-              h5.card-title #{project.project_name}
+              h5.card-title.mb-0 #{project.project_name}
 
+  //- For SVG/CSS filter on project thumbnails
   svg(xmlns='http://www.w3.org/2000/svg')
     filter#filter
         fecolormatrix(type='matrix', values=' 0.654  0.000  0.000  0.000 -0.136 \

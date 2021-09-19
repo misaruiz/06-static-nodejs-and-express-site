@@ -10,16 +10,16 @@ block content
     .inner-wrapper.flex-row-wrap.two-col
       .about-intro-box.box
         h1.display-3
-          strong #{name}
+          strong #{info.name}
         h3.text-primary.mb-4
-          strong #{title}
+          strong #{info.title}
 
         .about-bio
-          p.mb-5 #{about}
+          p.mb-5 #{info.about}
 
           section#work-experience.pt-4
             article.mb-5
-              each job of work_history
+              each job of info.work_history
                 h3.h4
                   strong #{job.position}
                 p.h6.text-primary= job.company
@@ -33,12 +33,12 @@ block content
             
       .skills-contact-box.box
         article.pb-5
-          each item in contact
+          each item in info.contact
             p.mb-2 
               i(class=`bi bi-${item.icon} text-primary`) 
               a(href=`${item.url}`) #{item.display}
 
-        each feat in feats 
+        each feat in info.feats 
           article.pb-3
             h6.text-primary 
               i(class=`bi bi-${feat.icon}`) 

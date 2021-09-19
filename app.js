@@ -5,6 +5,8 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+app.locals.info = data.info;
+
 //Static file (css, images, js)
 app.use('/static', express.static('public'));
 
@@ -13,11 +15,11 @@ app.set('view engine', 'pug');
 // Renders
 app.get('/', (req, res) => {
     const projects = data.projects;
-    res.render('index', {projects});
+    const home = data.home;
+    res.render('index', {projects, home});
 });
 app.get('/about', (req, res) => {
-    const info = data.info;
-    res.render('about', info);
+    res.render('about');
 })
 app.get('/project/:id', (req, res, next) => {
     const { id } = req.params;

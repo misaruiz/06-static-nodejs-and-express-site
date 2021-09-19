@@ -1,4 +1,9 @@
 {
+    "home": {
+        "headline": "Welcome!",
+        "subhead": "This is my Full Stack Javascript portfolio!",
+        "intro": "Take a look at my individual projects. But I'd like to point out that this portfolio also showcases my knowledge and experience deploying a website using Node.js, Express, Pug and Heroku. (Oh! Git, GitHub and VS Code too!)"
+    },
     "projects": [
         {
             "id": "0",
@@ -85,6 +90,8 @@
             "name": "Misael Ruiz",
             "title": "UX Designer and Full Stack Javascript Developer",
             "about": "I am a Full Stack Javascript Developer based in San Diego with a background in User Interface and Experience Design. I am passionate about the whole process, everything from design to development, from conception to execution. In my free time I am an illustrator and a fur father to a mini schnauzer.",
+            "short": "Full Stack Javascript Developer with a background in User Interface and Experience Design.",
+            "avatar": "misaruiz-avatar.png",
             "contact": [
                 {
                     "display": "619-292-1438",

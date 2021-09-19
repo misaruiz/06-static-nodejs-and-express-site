@@ -13,10 +13,11 @@ html(lang="en" dir="ltr")
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail.rounded-circle.shadow(src='/static/images/misaruiz-avatar.png', alt='')
+          img.thumbnail.rounded-circle.shadow(src=`/static/images/${info.avatar}`, alt=`Illustration of ${info.name}`)
         .dev-intro-box
-          h2.text-white Misael Ruiz
-          p.text-white Full Stack Javascript Developer with a background in User Interface and Experience Design.
+          h2.text-white 
+            strong #{info.name}
+          p.text-white #{info.short}
           a.btn.btn-primary(href='/about') Learn More  
             i.bi.bi-arrow-right
 
@@ -25,7 +26,7 @@ html(lang="en" dir="ltr")
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          spa Misael Ruiz
+          span Misael Ruiz
 
       block content
 

@@ -18,7 +18,7 @@ block content
           strong #{project_name}
 
         //- Use interpolation to dynamically add the project description
-        p.h5.text-primary #{description}
+        p #{description}
 
       .project-tech-links-box.box
         article.pb-3
@@ -33,11 +33,11 @@ block content
 
         //- Add the href values to the links below
         .mb-0 
-          i.bi.bi-lightning.text-primary
-          a(href=`${live_link}`)  Live Demo
+          i.bi.bi-lightning.text-primary 
+          a(href=`${live_link}`) Live Demo
         .mb-0 
-          i.bi.bi-github.text-primary
-          a(href=`${github_link}`)  GitHub Repo
+          i.bi.bi-github.text-primary 
+          a(href=`${github_link}`) GitHub Repo
 
     .project-img-box.box
 
