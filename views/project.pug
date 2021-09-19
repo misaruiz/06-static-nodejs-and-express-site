@@ -3,9 +3,9 @@ extends layout.pug
 block content
 
   nav.nav
-    a(href='/')
-      span &larr;
-      |  Back
+    a.btn.btn-outline-primary.ms-4(href='/') 
+      i.bi.bi-arrow-left
+      span Back
 
   article.portfolio-projects
     .inner-wrapper.flex-row-wrap.two-col
@@ -14,10 +14,11 @@ block content
         //- Use the info in your data file and the comments below to complete this template
 
         //- Use interpolation to dynamically add the project title
-        h1 #{project_name}
+        h1 
+          strong #{project_name}
 
         //- Use interpolation to dynamically add the project description
-        p #{descript}
+        p.text-primary #{description}
 
       .project-tech-links-box.box
         h6 Technologies
@@ -28,8 +29,12 @@ block content
             li= technology
 
         //- Add the href values to the links below
-        a.btn-link(href=`${live_link}`, target='_blank') Live Demo
-        a.btn-link(href=`${github_link}`, target='_blank') GitHub Repo
+        .mb-0 
+          i.bi.bi-lightning.text-primary
+          a(href=`${live_link}`)  Live Demo
+        .mb-0 
+          i.bi.bi-github.text-primary
+          a(href=`${github_link}`)  GitHub Repo
 
     .project-img-box.box
 
@@ -38,6 +43,7 @@ block content
         img.project-img(src=`/static/images/${image_url}`, alt='')
 
     nav.nav
-      a(href='/')
-        span &larr;
-        |  Back
+    nav.nav
+      a.btn.btn-outline-primary.ms-4(href='/') 
+        i.bi.bi-arrow-left
+        span Back

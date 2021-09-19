@@ -9,13 +9,14 @@
   box-sizing: border-box;
 }
 
-html,
+/* html, */
 body {
   font-size: 100%;
   width: 100%;
   min-width: 100%;
   height: 100%;
   min-height: 100%;
+  background: rgb(90, 99, 109);
 }
 
 body {
@@ -30,6 +31,14 @@ body {
   transition: all 0.4s ease-out;
 }
 
+strong {
+  font-weight: 900;
+}
+
+.projects-box a {
+  text-decoration: none;
+}
+
 article {
   background: #fefefe;
 }
@@ -38,26 +47,26 @@ h1,h2,h3,h4,h5,p{
   font-family: 'Nunito', serif;
 }
 
-h5{
+/* h5{
   font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+} */
 
-h6{
+/* h6{
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
   color: rgb(13, 110, 253);
-}
+} */
 
-p {
+/* p {
   font-size: 15px;
   color: rgb(13, 110, 253);
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 .wrapper {
   width: 100%;
@@ -87,7 +96,7 @@ a {
   border-bottom: 1px solid #eaeaea;
 }
 
-.box h1,
+/* .box h1,
 .box h6 {
   margin: 0 auto 8px;
 }
@@ -96,7 +105,7 @@ a {
   font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 2px;
-}
+} */
 
 .box li {
   font-size: 13px;
@@ -113,7 +122,6 @@ nav {
 }
 
 nav a {
-  width: 100%;
   vertical-align: middle;
   font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -122,11 +130,11 @@ nav a {
   text-transform: uppercase;
   color: #555; 
 }
-
+/* 
 nav a span {
   font-weight: bold;
   font-size: 1.25rem;
-}
+} */
 
 .sidebar {
   position: absolute;
@@ -162,22 +170,22 @@ nav a span {
   color: #fefefe;
   margin: 0 auto 0.5rem;
 }
-
+/* 
 .sidebar p {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
   color: #999
-}
+} */
 
-.sidebar a {
+/* .sidebar a {
   font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #555;
-}
+} */
 
 .header {
   vertical-align: middle;
@@ -226,27 +234,27 @@ nav a span {
   max-width: 1200px;
   padding: 40px 50px 30px;
 }
-
+/* 
 .portfolio-intro h1 {
   font-size: 1.5rem;
   color: #0a0a0a;
   margin: 0 auto 8px;
-}
+} */
 
-.portfolio-intro p {
+/* .portfolio-intro p {
   text-rendering: optimizeLegibility;
   font-size: 125%;
   margin: 0 auto;
   padding-bottom: 40px;
   border-bottom: 1px solid #eaeaea;
-}
+} */
 
-.projects-box h5 {
+/* .projects-box h5 {
   font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: rgb(13, 110, 253);
   margin: 0 auto 8px;
-}
+} */
 
 .cell a {
   width: 100%;
@@ -262,15 +270,15 @@ nav a span {
 /* 
   About and project pages styles 
 */
-.about-intro-box p,
+/* .about-intro-box p,
 .project-info-box p {
   font-size: 125%;
-}
+} */
 
-.about-bio p {
+/* .about-bio p {
   font-size: 15px;
   padding-top: 40px;
-}
+} */
 
 .skills-contact-box ul {
   margin-bottom: 35px;
@@ -357,4 +365,18 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+
+.svg-filters {
+  height: 0;
+  left: -9999em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.card img {
+  filter: url(#filter);
 }

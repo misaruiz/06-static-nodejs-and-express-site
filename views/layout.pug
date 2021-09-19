@@ -6,32 +6,25 @@ html(lang="en" dir="ltr")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Portfolio Site
     link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We', crossorigin='anonymous')
-    link(rel='stylesheet', href='/static/css/normalize.css')
     link(rel='stylesheet', href='/static/css/styles.css')
 
-  body.bg-secondary
+  body
     #my-info.sidebar
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail.rounded-circle(src='/static/images/misaruiz-avatar.png', alt='')
+          img.thumbnail.rounded-circle.shadow(src='/static/images/misaruiz-avatar.png', alt='')
         .dev-intro-box
-
-          //- Replace with your name
-          h5 Misael Ruiz
-
-          //- Replace with description of who you are, what you do, and why you are so awesome
-          p Description
-
-          //- Add path from your '/about' route handler to the href below
-          a(href='/about') Learn More &rarr;
+          h2.text-white Misael Ruiz
+          p.text-white Full Stack Javascript Developer with a background in User Interface and Experience Design.
+          a.btn.btn-primary(href='/about') Learn More  
+            i.bi.bi-arrow-right
 
     .wrapper
       .header
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          //- Replace with your name — this is for the mobile layout
           spa Misael Ruiz
 
       block content

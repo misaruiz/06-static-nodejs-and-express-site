@@ -5,21 +5,25 @@ block content
   article.portfolio-intro
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 My Proftfolio
+    h1.display-3
+      strong My Portfolio
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
+    p.h6.text-primary Portfolio description
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
       each project in projects
-        .cell
-          a(href=`/project/${project.id}`)
-            img.thumbnail.img-thumbnail(src=`/static/images/${project.image_urls[0]}`, alt=`${project.description}`)
-            h5 #{project.project_name}
         a(href=`/project/${project.id}`)
-          .card.mb-3
-            img.card-img-top(src=`/static/images/${project.image_urls[0]}`, alt=`${project.description}`)
+          .card.mb-3.shadow
+            img.card-img-top(src=`/static/images/${project.image_thumb}`, alt=`${project.description}`)
             .card-body
               h5.card-title #{project.project_name}
+
+  svg(xmlns='http://www.w3.org/2000/svg')
+    filter#filter
+        fecolormatrix(type='matrix', values=' 0.654  0.000  0.000  0.000 -0.136 \
+        0.000  0.654  0.000  0.000 -0.004 \
+        0.000  0.000  0.654  0.000  0.257 \
+        0.000  0.000  0.000  1.000  0.000')

@@ -7,8 +7,8 @@
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://misaruiz.github.io/01-Random-Quote-Generator/",
             "github_link": "https://github.com/misaruiz/01-Random-Quote-Generator",
+            "image_thumb": "misaruiz-portfolio-project01-img01.png",
             "image_urls": [
-                "misaruiz-portfolio-project01-img01.png", 
                 "misaruiz-portfolio-project01-img02.png", 
                 "misaruiz-portfolio-project01-img03.png",
                 "misaruiz-portfolio-project01-img04.png",
@@ -23,10 +23,9 @@
             "technologies": ["javascript", "HTML", "CSS"],
             "live_link": "https://misaruiz.github.io/02-Data-Pagination-And-Filtering/",
             "github_link": "https://github.com/misaruiz/02-Data-Pagination-And-Filtering",
-            "image_urls": [
-                "misaruiz-portfolio-project02-img01.png", 
+            "image_thumb": "misaruiz-portfolio-project02-img01.png",
+            "image_urls": [ 
                 "misaruiz-portfolio-project02-img02.png", 
-                "misaruiz-portfolio-project02-img03.png",
                 "misaruiz-portfolio-project02-img04.png"
             ]
         },
@@ -37,11 +36,13 @@
             "technologies": ["javascript", "HTML", "CSS"],
             "live_link": "https://misaruiz.github.io/03-Interactive-Form/",
             "github_link": "https://github.com/misaruiz/03-Interactive-Form",
+            "image_thumb": "misaruiz-portfolio-project03-img01.png",
             "image_urls": [
-                "misaruiz-portfolio-project03-img01.png", 
                 "misaruiz-portfolio-project03-img02.png", 
                 "misaruiz-portfolio-project03-img03.png",
-                "misaruiz-portfolio-project03-img04.png"
+                "misaruiz-portfolio-project03-img04.png",
+                "misaruiz-portfolio-project03-img05.png",
+                "misaruiz-portfolio-project03-img06.png"
             ]
         },
         {
@@ -51,11 +52,15 @@
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://misaruiz.github.io/03-Interactive-Form/",
             "github_link": "https://github.com/misaruiz/03-Interactive-Form",
+            "image_thumb": "misaruiz-portfolio-project04-img01.png",
             "image_urls": [
-                "misaruiz-portfolio-project04-img01.png", 
                 "misaruiz-portfolio-project04-img02.png", 
                 "misaruiz-portfolio-project04-img03.png",
-                "misaruiz-portfolio-project04-img04.png"
+                "misaruiz-portfolio-project04-img04.png",
+                "misaruiz-portfolio-project04-img05.png",
+                "misaruiz-portfolio-project04-img06.png",
+                "misaruiz-portfolio-project04-img07.png",
+                "misaruiz-portfolio-project04-img08.png"
             ]
         },
         {
@@ -65,11 +70,13 @@
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://misaruiz.github.io/05-public-api-requests/",
             "github_link": "https://github.com/misaruiz/05-public-api-requests",
+            "image_thumb": "misaruiz-portfolio-project05-img01.png",
             "image_urls": [
-                "misaruiz-portfolio-project05-img01.png", 
                 "misaruiz-portfolio-project05-img02.png", 
                 "misaruiz-portfolio-project05-img03.png",
-                "misaruiz-portfolio-project05-img04.png"
+                "misaruiz-portfolio-project05-img04.png",
+                "misaruiz-portfolio-project05-img05.png",
+                "misaruiz-portfolio-project05-img06.png"
             ]
         }
     ],
