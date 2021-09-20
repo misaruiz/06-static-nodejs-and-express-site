@@ -51,8 +51,12 @@ app.use((err, req, res, next) => {
     res.status(err.status);
     // Special page for 404 Errors
     if (err.status === 404) {
+        const message = `D'oh! Looks like the page doesn't exist. ${err} (${err.status}) `;
+        console.log(message);
         res.render('page-not-found', err);
     } else {
+        const message = `D'oh! There seems to be a problem with the server. ${err} (${err.status}) `;
+        console.log(message);
         res.render('error');
     }
     
