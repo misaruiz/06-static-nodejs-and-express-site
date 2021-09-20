@@ -19,6 +19,7 @@ block content
 
           section#work-experience.pt-4
             article.mb-5
+              //- Iterates through work history
               each job of info.work_history
                 h3.h4
                   strong #{job.position}
@@ -28,24 +29,28 @@ block content
                   span.text-primary.text-opacity-25 &bull;
                   |  #{job.location}
                 ul.description
+                  //- Iterates through each description item
                   each description of job.descriptions
                     li #{description}
             
       .skills-contact-box.box
         article.pb-5
+          //- Iterates through all contact items (phone, email, linkedin, github, etc.)
           each item in info.contact
             p.mb-2 
               i(class=`bi bi-${item.icon} text-primary`) 
-              a(href=`${item.url}`) #{item.display}
-
+              a(href=`${item.url}`, target="_blank") #{item.display}
+        //- Iterates through all feats (skills, recognition, and more...)
         each feat in info.feats 
           article.pb-3
             h6.text-primary 
               i(class=`bi bi-${feat.icon}`) 
               | #{feat.category}
+            //- Iterates through each subcategory
             each sub in feat.subcategories
               p.small 
                 strong #{sub.head}
+                //- Iterates through each item in subcategory
                 each item in sub.items
                   span.text-primary.text-opacity-50  • 
                   span #{item}

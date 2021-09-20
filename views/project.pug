@@ -6,18 +6,12 @@ block content
     a.btn.btn-outline-primary.ms-4(href='/') 
       i.bi.bi-arrow-left
       span Back
-
+  
   article.portfolio-projects
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
-
-        //- Use the info in your data file and the comments below to complete this template
-
-        //- Use interpolation to dynamically add the project title
         h1.display-4 
           strong #{project_name}
-
-        //- Use interpolation to dynamically add the project description
         p #{description}
 
       .project-tech-links-box.box
@@ -27,23 +21,22 @@ block content
             |  Technologies
 
           p.small 
+            //- Iterates through all project technologies
             each technology in technologies
               span.text-primary.text-opacity-50  • 
               span= technology
 
-        //- Add the href values to the links below
         .mb-0 
           i.bi.bi-lightning.text-primary 
-          a(href=`${live_link}`) Live Demo
+          a(href=`${live_link}`, target="_blank") Live Demo
         .mb-0 
           i.bi.bi-github.text-primary 
-          a(href=`${github_link}`) GitHub Repo
+          a(href=`${github_link}`, target="_blank") GitHub Repo
 
     .project-img-box.box
-
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
+      //- Iterates through all available project images
       each image_url of image_urls
-        img.project-img(src=`/static/images/${image_url}`, alt='')
+        img.project-img(src=`/static/images/${image_url}`, alt=`${project_name}`)
 
     nav.nav
     nav.nav

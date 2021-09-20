@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+// Creates a global local with personal info so all templates have access
 app.locals.info = data.info;
 
 //Static file (css, images, js)

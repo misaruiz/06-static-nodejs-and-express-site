@@ -11,6 +11,7 @@ block content
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
+      //- Iterates through all projects to display image thumb and title
       each project in projects
         a(href=`/project/${project.id}`)
           .card.mb-3.shadow
